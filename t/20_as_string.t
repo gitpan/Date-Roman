@@ -1,3 +1,4 @@
+#testing if the as_string method works
 use Date::Roman;
 use strict;
 my @data;

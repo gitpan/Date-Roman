@@ -16,7 +16,7 @@ use constant Kalendae => 0;
 use constant Nonae => 1;
 use constant Idibus => 2;
 
-$VERSION = '1.03';
+$VERSION = '1.05';
 
 # Array local variables containing months' names
 my @MONS_SHORT = ('','Jan.','Feb.','Mar.','Apr.','Mai.','Jun.',
@@ -861,7 +861,7 @@ It is defined by the following ABNF specification (see rfc2234):
    <prefix>     = 1*2DIGIT     ; "1".."4" / "1".."6" / "1".."8" /
                                ; "1".."16" / "1".."17" /
                                ; "1".."18" / "1".."19"
-                               ; according to <mons> <fixe day>
+                               ; according to <mons> <fixed day>
                                ; value.
 
    <prefix>    /= "b6"         ; only for <mons> equal to "3", <fixed day> 
@@ -874,7 +874,7 @@ It is defined by the following ABNF specification (see rfc2234):
 
 We use the "b6" prefix to indicate the leap day (24th february)
 introduced in leap tears. As it is stated below in section L<The days
-in the Roman calendar>, this was again the 6th day before the kalendae
+in the Roman calendar>, this was again the 6th day before the Kalendae
 of March, exatly as the day after.
 
 =head2 The I<ical> format
@@ -893,7 +893,7 @@ following ABNF specification (see rfc2234):
                            ; to <month> <year> value
   <minus>       = %x2d
 
-As it is customary, we use 0 to represents the year S<1 BC>, 
+As it is customary, we use 0 to represent the year S<1 BC>, 
 -1 to represent the year S<2 BC> and so on.
 
 
@@ -932,7 +932,7 @@ L<see the section TODO above|TODO>).
 =head2 The days in the Roman calendar
 
 The Romans didn't number the days sequentially from 1. Instead they
-had three fixed points in each month: 
+had three fixed days in each month: 
 
 =over
 
@@ -955,14 +955,14 @@ first day).
 
 The others days, where designed counting backward from these fixed
 days. It should be remarked that, in counting backward, the romans
-used an inclusive counting, so that, for instance,
+used an inclusive counting. That way, for instance,
 the 2 Jan was the 4th day before the nones of January (the nones of
 January being the 5th of January).
 
 The day before a fixed day was designed by "pridie", abbreviated as
-"p.d.". The other days was designed using the formula "ante diem"
-(abbreviated as "a.d."), so for instance the 16th of April was 
-ante diem XVI Kalendas Maias, abbreviated as a.d. Kal. Mai.
+"p.d.". The other days was designed using the formula "ante diem",
+abbreviated as "a.d.". For instance, the 16th of April was 
+I<ante diem XVI Kalendas Maias>, abbreviated as I<a.d. Kal. Mai.>
 
 In leap years, the supplemental day was obtained by counting two times
 the 6th day before the Kalendae of March.
@@ -971,16 +971,16 @@ the 6th day before the Kalendae of March.
 
 Romans counted years starting from the mitical foundation of Rome by
 Romolus on 21st April, S<753 BC>. Fr instance, year S<2002 AD> 
-is the year S<2753 AUC> (ab Urbe condita, after the foundation 
+is the year S<2755 AUC> (ab Urbe condita, after the foundation 
 of the City).
 
 =head2 What before the Julian reform?
 
-Before Julius Caesar introduced the Julian calendar in S<45 BC>, the
+Before Julius Caesar introduced the Julian calendar in S<709 AUC>, the
 Roman calendar was a mess, and much of our so-called ``knowledge''
 about it seems to be little more than guesswork. This module uses the
 Julian calendar also for dates before the 1 Jan S<45 BC> (or, more
-precisely, Kalendas Ianuariis S<DCCII AUC>). This is the so called
+precisely, Kalendas Ianuariis S<DCCIX AUC>). This is the so called
 'proleptic Julian calendar' and it is consistent with the historians'
 habit to do so.
 

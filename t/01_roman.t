@@ -1,3 +1,4 @@
+#testing if the Date::Roman->new(roman => something) works
 use Date::Roman;
 use strict;
 my @data;

@@ -11,6 +11,7 @@ test-data/years.txt
 test-data/epoch.txt
 test-data/add.txt
 
+bin/RomanDate
 
 t/00_load.t
 t/01_roman.t
@@ -21,4 +22,4 @@ t/05_epoch.t
 t/10_change.t
 t/20_as_string.t
 t/30_add.t
-
+t/40_RomanDate.t
