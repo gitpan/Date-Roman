@@ -1,0 +1,34 @@
+Date/Roman version 0.05
+=======================
+
+ DESCRIPTION
+
+This module defines a class for handling Roman dates as defined by
+Julius Caesar in 45 BC.
+
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  *  Roman
+  
+
+COPYRIGHT AND LICENCE
+
+
+This software is Copyright (C) 2002 by Leo Cacciari.  This software is free
+software; you can redistribute it and/or modify it under the terms of
+the Perl Artistic License, either as stated in the enclosed LICENSE
+file or (at your option) as given on the Perl home site: 
+http://www.perl.com/language/misc/Artistic.html
+

@@ -1,0 +1,8 @@
+Revision history for Perl extension Date::Roman
+
+1.03  Sat Apr 20 21:44:07 2002
+	- corrected typos in the pod;
+
+1.02  Sat Apr 20 21:42:12 2002
+	- original CPAN version;
+
