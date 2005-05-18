@@ -28,22 +28,22 @@ BEGIN {
 			{
 			 params => {annus => 'Roman', fday => 'abbrev', 
 				    mons => 'complete'},
-			 value => "Id. Martiis DCCII AUC"
+			 value => "Id. Martias DCCII AUC"
 			},
 			{
 			 params => {annus => 'roman', fday => 'complete'},
-			 value => "Idibus Mar. dccii AUC"
+			 value => "Idus Mar. dccii AUC"
 			},
 			{
 			 params => {words => 'complete',
 				    auc => 'abbrev'},
-			 value => "Idibus Martiis DCCII AUC"
+			 value => "Idus Martias DCCII AUC"
 			},
 			{
 			 params => {words => 'complete',
 				    num => 'roman'
 				   },
-			 value => "Idibus Martiis dccii ab Urbe Condida"
+			 value => "Idus Martias dccii ab Urbe Condida"
 			}
 		       ]
 	   },

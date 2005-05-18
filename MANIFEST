@@ -23,3 +23,4 @@ t/10_change.t
 t/20_as_string.t
 t/30_add.t
 t/40_RomanDate.t
+META.yml                                 Module meta-data (added by MakeMaker)

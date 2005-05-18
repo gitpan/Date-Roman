@@ -16,18 +16,18 @@ use constant Kalendae => 0;
 use constant Nonae => 1;
 use constant Idibus => 2;
 
-$VERSION = '1.05';
+$VERSION = '1.06';
 
 # Array local variables containing months' names
-my @MONS_SHORT = ('','Jan.','Feb.','Mar.','Apr.','Mai.','Jun.',
+my @MONS_SHORT = ('','Ian.','Feb.','Mar.','Apr.','Mai.','Iun.',
 		  'Iul.','Aug.','Sep.','Oct.','Nov.','Dec.');
 
 my @MONS = ('','Ianuarias','Februarias','Martias','Apriles',
 	    'Maias','Iunias','Iulias','Augustas','Septembres',
 	    'Octobres','Novembres','Decembres');
 
-my @MONS_FD = ('','Iauariis','Februariis','Martiis','Aprilibus',
-	       'Maiis','Iuniis','Iuliis','Augusis','Septembribus',
+my @MONS_FD = ('','Ianuariis','Februariis','Martiis','Aprilibus',
+	       'Maiis','Iuniis','Iuliis','Augustis','Septembribus',
 	       'Octobribus','Novembribus','Decembribus');
 
 
@@ -35,7 +35,7 @@ my @MONS_FD = ('','Iauariis','Februariis','Martiis','Aprilibus',
 # is based on the constants above).
 
 my @FD_SHORT = ('Kal.','Non.','Id.');
-my @FD = ('Kalendas','Nonas','Idius');
+my @FD = ('Kalendas','Nonas','Idus');
 my @FD_FD = ('Kalendis','Nonis','Idibus');
 
 
@@ -230,7 +230,7 @@ sub as_string {
     $string .= $FD_SHORT[$self->{base}]." ";
   }
   else {
-    $string .= ($self->{ad} == 1) ? "$FD_FD[$self->{base}] " 
+    $string .= ($self->{ad} == 0) ? "$FD_FD[$self->{base}] " 
       : "$FD[$self->{base}] ";
   }
 
@@ -238,7 +238,7 @@ sub as_string {
     $string .= "$MONS_SHORT[$self->{mons}] ";
   }
   else {
-    $string .= ($self->{ad} == 1) ? $MONS_FD[$self->{mons}] : $MONS[$self->{mons}];
+    $string .= ($self->{ad} == 0) ? $MONS_FD[$self->{mons}] : $MONS[$self->{mons}];
     $string .= " ";
   }
 
